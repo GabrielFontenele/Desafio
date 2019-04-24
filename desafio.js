@@ -1,4 +1,3 @@
-
 function questaoUm(){
   var custo_de_fabrica = 10000;
   var percentual_do_distribuidor = 28/100;
@@ -20,7 +19,7 @@ function questaoDois(){
 function questaoTres(){
   str = "paralelepípedo";
   numV = str.match(/[aeiouAEIOUáéíóúÁÉÍÓÚÀÈÌÒÙãõÃÕâêîôûÂÊÎÔÛ]/gi);
-  return "Quantidade de vogais: " +(numV === null ? 0 : numV.length);
+  return "Quantidade de vogais: " +(numV === null ? 0 : numV.length) ;
 }
 
 function questaoQuatro(){
@@ -64,7 +63,8 @@ function myFunction(numDesafio ) {
       document.getElementById("demo").innerHTML = 
       questaoTres()+ 
       "<p>Codigo:</p>"+
-      "<pre>"+questaoTres.toString().replace("<","&lt;")+"</pre>"; 
+      "<pre>"+questaoTres.toString().replace("<","&lt;")+"</pre>"+
+      "<br /><a href='https://github.com/GabrielFontenele/Vowel-counte-MIPS-32'>versão em assemble</a>"; 
       break;
     case 4:
       document.getElementById("demo").innerHTML = 
